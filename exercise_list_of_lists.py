@@ -1,21 +1,21 @@
-# Ejercicio 11: Comparar tercer elemento de dos listas
+# Ejercicio 12: Manipular lista de listas
 
-def check_lists(lista1, lista2):
+def list_of_lists(lista_de_listas):
     """
-    Verifica si ambas listas tienen el mismo elemento en la tercera posición.
-    Si alguna de las listas no tiene un tercer elemento, retorna False.
+    Modifica una lista de 3 listas internas:
+    - Primera lista: solo los primeros 2 elementos
+    - Segunda lista: elementos entre el segundo y cuarto
+    - Tercera lista: solo los últimos 2 elementos
 
     Args:
-        lista1: Primera lista
-        lista2: Segunda lista
+        lista_de_listas: Una lista que contiene 3 listas
 
     Returns:
-        True si ambas listas tienen el mismo tercer elemento, False en caso contrario
+        La lista de listas modificada según las reglas
     """
+    return [lista_de_listas[0][:2],
+            lista_de_listas[1] [1:4],
+            lista_de_listas[2] [-2:]
+            ]
 
-    if len(lista1) >3  and len(lista2) >3:
-        if lista1[2] == lista2[2]:
-            return True
-    else:
-        return False
 
